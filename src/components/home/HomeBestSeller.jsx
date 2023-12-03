@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const HomeBestSeller = () => {
   const [getData, setGetData] = useState([]);
+
+  const params = useParams()
 
   useEffect(() => {
     axios
@@ -27,6 +30,7 @@ const HomeBestSeller = () => {
           </div>
         ))}
       </div>
+      <p className="loadMore">load-more...</p>
     </>
   );
 };

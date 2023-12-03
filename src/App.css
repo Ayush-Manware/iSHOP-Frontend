@@ -13,6 +13,13 @@
 body{
   background-color: var(--bodybackground);
   padding: 2vw;
+  cursor: default;
+  overflow: hidden;
+}
+
+.slick-arrow {
+  /* background-color: red; */
+  display: none;
 }
 
 .topBarMain{
@@ -118,13 +125,38 @@ body{
 }
 
 .bestSellerCard{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 25%;
+  background-color: white;
+  padding: 1vw;
 }
 
 .bestSellerCardImg{
   width: 100%;
   display: block;
   height: 30%;
+}
+
+.loadMore{
+  margin: 2vw auto 1vw;
+  text-align: center;
+  font-size: 1vw;
+  text-decoration: underline;
+  color: var(--logoColor);
+}
+
+.thirdComponent{
+  background-color: rgb(59, 185, 234);
+  width: 100%;
+  height: 30vw;
+  color: white;
+}
+
+.thirdCompoHeading{
+  
+}
+
+.thirdDivOne{
+  display: inline;
 }
 
