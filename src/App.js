@@ -1,11 +1,20 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import MainFile from "./Main/MainFile";
-import axios from "axios"
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <MainFile />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<p>Product Listing Component</p>} />
+        <Route path="/add" element={<p>Add Product Component</p>} />
+        <Route path="/update" element={<p>update Listing Component</p>} />
+        <Route path="/logout" element={<p>logout Listing Component</p>} />
+        <Route path="/profile" element={<p>profile Listing Component</p>} />
+      </Routes>
+      <Footer/>
     </>
   );
 }
