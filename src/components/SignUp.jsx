@@ -32,7 +32,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="signupDiv">
+    <div className="formDiv">
       <h1>Sign-up</h1>
 
       <label htmlFor="name">Name</label>
