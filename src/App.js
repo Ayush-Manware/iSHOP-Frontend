@@ -1,16 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import SignUp from "./components/SignUp";
 import PrivateComponent from "./components/PrivateComponent";
-import Login from "./components/Login";
-import Home from './subnavbar/Home'
-import Fashion from "./subnavbar/Fashion";
-import Grocerry from "./subnavbar/Grocerry";
-import Electronic from "./subnavbar/Electronic";
-import Beauty from "./subnavbar/Beauty";
 import SubNavbar from "./subnavbar/SubNavbar";
+import Footer from "./components/footer/Footer";
+import SignUp from "./components/navbar/SignUp";
+import Login from "./components/navbar/Login";
+import Home from "./components/home/Home";
+import Fashion from "./components/fashion/Fashion";
+import Grocerry from "./components/grocery/Grocerry";
+import Electronic from "./components/electronic/Electronic";
+import Beauty from "./components/beauty/Beauty";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Banner from "../components/Banner";
+import Banner from "./Banner";
+import ScrollbarComponent from "./ScrollOne";
 
 const Home = () => {
   const [all, setAll] = useState([]);
@@ -23,18 +24,7 @@ const Home = () => {
   return (
     <div className="homeContainer">
       <Banner/>
-      <div className="homeMenScroll">
-        {mensFashion.map((item, index) => (
-          <Link key={index}>
-            <div className="homeCardContainer">
-              <img src={item.image} alt="Err-/" className="cardImage" />
-              <p></p>
-              <h5> <span className="cardHeading">{item.heading}</span>  <span className="cardPrice">₹ {item.price}</span></h5>
-              <p>Rating-{item.rating}</p>
-            </div>
-          </Link>
-        ))}
-      </div>
+      <ScrollbarComponent/>
       <div className="homeMenScroll homeWomenScroll">
       {womensFashion.map((item, index) => (
           <Link key={index}>

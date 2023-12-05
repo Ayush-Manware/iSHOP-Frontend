@@ -12,6 +12,7 @@
   --logoColor: rgb(250, 57, 89);
   --navLinkColor: rgb(67, 67, 67);
   --gray:rgb(79, 79, 79);
+  --black: rgb(13, 13, 13);
 }
 
 ::-webkit-scrollbar {
@@ -136,15 +137,24 @@ label {
   margin: 2vw auto;
 }
 
+.productInfo{
+  margin: 1vw auto;
+  color: var(--black);
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
 .homeCardContainer {
   width: 20vw;
-  border: 2px solid gray;
-  /* margin: ; */
+  box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.134);
   padding: 1vw;
 }
 
+.sliderOne{
+  padding: 1vw;
+  border: 1px solid red;
+}
+
 .cardImage {
-  border: 2px solid gray;
   width: 90%;
   margin: auto;
   display: block;
@@ -199,6 +209,16 @@ label {
 
 .crouselImage{
   width: 100%;
+}
+
+.bestSeller{
+  text-align: center;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.homeAddtocart{
+  width: 100%;
+  padding: 0.5vw 0vw;
 }
 
 
