@@ -33,7 +33,7 @@ const Crousel = () => {
   };
 
   return (
-    <div>
+    <div className='crouselMain'>
       <Slider {...settings} className='crouselslider'>
         <div>
           <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/aa1b2bdcf519b468.jpg?q=20" alt="Kitten 1" className='crouselImage' />

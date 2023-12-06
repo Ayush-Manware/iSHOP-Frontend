@@ -11,8 +11,23 @@ import Electronic from "./components/electronic/Electronic";
 import Beauty from "./components/beauty/Beauty";
 import Navbar from "./components/navbar/Navbar";
 import SubNavbar from "./components/subnavbar/SubNavbar";
+import MensFashion from "./components/fashion/MensFashion";
+import LadiesFashion from "./components/fashion/LadiesFashion";
+import KidsFashion from "./components/fashion/KidsFashion";
+import Mobiles from "./components/electronic/Mobiles";
+import Laptop from "./components/electronic/Laptop";
+import Watch from "./components/electronic/Watch";
+import Beverages from "./components/grocery/Beverages";
+import IndianRegular from "./components/grocery/IndianRegular";
+import Snacks from "./components/grocery/Snacks";
+import TeaCoffee from "./components/grocery/Tae&Coffee";
+import Mac from "./components/beauty/Mac";
+import Swiss from "./components/beauty/Swiss";
+import OtherBeauty from "./components/beauty/OtherBeauty";
+import Dynamic from "./Dynamic";
 
 function App() {
+  
   return (
     <>
       <Navbar />
@@ -29,6 +44,20 @@ function App() {
           <Route path="/electronics" element={<Electronic/>} />
           <Route path="/grocerry" element={<Grocerry/>} />
           <Route path="/beauty" element={<Beauty/>} />
+          <Route path="/mensFashion" element={<MensFashion/>} />
+          <Route path="/ladiesFashion" element={<LadiesFashion/>} />
+          <Route path="/kidsFashion" element={<KidsFashion/>} />
+          <Route path="/mobiles" element={<Mobiles/>}/>
+          <Route path="/laptops" element={<Laptop/>} />
+          <Route path="/watches" element={<Watch/>} />
+          <Route path="/beverages" element={<Beverages/>} />
+          <Route path="/indianFood" element={<IndianRegular/>} />
+          <Route path="/snacks" element={<Snacks/>} />
+          <Route path="/tea&coffee" element={<TeaCoffee />} />
+          <Route path='/mac' element={<Mac/>} />
+          <Route path='/swissBeauty' element={<Swiss/>} />
+          <Route path="/otherBeauty" element={<OtherBeauty/>} />
+          <Route path="/dynamic:id" element={<Dynamic/>} />
         </Route>
         <Route path="/signup" element={<SignUp />} />
         <Route path={"/login"} element={<Login />} />

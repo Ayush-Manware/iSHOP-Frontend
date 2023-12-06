@@ -139,6 +139,34 @@ body {
   display: block;
 }
 
+.innerSubNavbar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fashionListDiv{
+  position: relative;
+}
+
+.fashionList{
+  display: none;
+  width: 12vw;
+  text-align: left;
+  background-color: white;
+  position: absolute;
+  top: 2.1vw;
+}
+
+.fashionList a{
+  display: block;
+  color: var(--gray); 
+}
+
+.fashionListDiv:hover .fashionList{
+  display: block;
+}
+
 .formDiv {
   border: 1px solid var(--cadetColor);
   width: 30vw;
@@ -161,6 +189,11 @@ label {
 
 .homeContainer {
   padding: 0vw 1vw;
+}
+
+.homeBody{
+  /* border: 2px solid red; */
+  padding: 1vw 3vw;
 }
 
 .homeMenScroll {
@@ -193,6 +226,7 @@ label {
 
 .homeCardContainer {
   width: 20vw;
+  height: max-content;
   padding: 1vw;
   box-shadow: 4px 4px 10px rgb(168, 168, 168);
   border: 1px solid var(--cadetColor);
@@ -203,7 +237,7 @@ label {
 .homeCardContainer:hover{
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.522);
   transform: translateY(-10px);
-  z-index: 2;
+  z-index: 10;
   background-color: rgba(95, 158, 160, 0.288);
   color: white;
 }
@@ -269,7 +303,8 @@ label {
 }
 
 .banner{
-  height: 22vw;
+  height: 18vw;
+  z-index: -2;
 }
 
 .logoTwo{
@@ -280,6 +315,7 @@ label {
 
 .crouselImage{
   width: 100%;
+  z-index: -5;
 }
 
 .homeAddtocart{
@@ -287,8 +323,52 @@ label {
   padding: 0.5vw 0vw;
 }
 
-.footerDiv{
-  background-color: var(--cadetColor);
+
+.mensFashionMainDiv{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+  align-items: last baseline;
 }
+
+
+/* Footer.css */
+.footer {
+  background-color: var(--cadetColor);
+  padding: 30px 0;
+  color: #333;
+  margin-top: 2vw;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  max-width: 300px;
+}
+
+.footer-section p{
+  color: rgb(255, 255, 255);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+}
+
+.footer-bottom p{
+  color: white;
+}
+
+.SocialIcons{
+  color: white;
+  margin: 0.5vw;  
+}
+
 
 
