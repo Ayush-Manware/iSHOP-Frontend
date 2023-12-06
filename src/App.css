@@ -13,6 +13,7 @@
   --navLinkColor: rgb(67, 67, 67);
   --gray:rgb(79, 79, 79);
   --black: rgb(13, 13, 13);
+  --cadetColor: cadetBlue;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +31,42 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: cadetblue;
+  background: var(--cadetColor);
+}
+
+.loader {
+  width: 4.8vw;
+  height: 4.8vw;
+  border: 5px solid var(--cadetColor);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  animation: pulse 1s linear infinite;
+  display: block;
+}
+.loader:after {
+  content: '';
+  position: absolute;
+  width: 4.8vw;
+  height: 4.8vw;
+  border: 5px solid var(--cadetColor);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: scaleUp 1s linear infinite;
+}
+
+@keyframes scaleUp {
+  0% { transform: translate(-50%, -50%) scale(0) }
+  60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+}
+@keyframes pulse {
+  0% , 60% , 100%{ transform:  scale(1) }
+  80% { transform:  scale(1.2)}
 }
 
 body {
@@ -38,7 +74,7 @@ body {
 }
 
 .navbar {
-  background-color: cadetblue;
+  background-color: var(--cadetColor);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,15 +179,23 @@ label {
   font-family: "Ysabeau Infant", sans-serif;
 }
 
-.homeCardContainer {
-  width: 20vw;
-  box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.134);
-  padding: 1vw;
+.sliderOne{
+  margin: 3vw auto;
 }
 
-.sliderOne{
+.bestSeller{
+  font-size: 2vw;
+  color: var(--black);
+  text-align: center;
+  margin: 1vw auto;
+  text-decoration: overline;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.homeCardContainer {
+  width: 20vw;
   padding: 1vw;
-  border: 1px solid red;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.23);
 }
 
 .cardImage {
@@ -178,11 +222,11 @@ label {
 
 .subNavbar {
   text-align: center;
-  border-bottom: 2px solid cadetblue;
+  border-bottom: 2px solid var(--cadetColor);
   margin: 2vw auto;
   padding: 1vw;
   width: fit-content;
-  color: cadetblue;
+  color: var(--cadetColor);
   font-family: "Ysabeau Infant", sans-serif;
 }
 
@@ -207,13 +251,15 @@ label {
   height: 22vw;
 }
 
-.crouselImage{
-  width: 100%;
+.logoTwo{
+  display: block;
+  margin:auto;
+  width: 4vw; 
+  /* border: 1px solid red; */
 }
 
-.bestSeller{
-  text-align: center;
-  font-family: "Ysabeau Infant", sans-serif;
+.crouselImage{
+  width: 100%;
 }
 
 .homeAddtocart{

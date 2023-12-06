@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import PrivateComponent from "./components/PrivateComponent";
-import SubNavbar from "./subnavbar/SubNavbar";
 import Footer from "./components/footer/Footer";
 import SignUp from "./components/navbar/SignUp";
 import Login from "./components/navbar/Login";
@@ -11,6 +10,7 @@ import Grocerry from "./components/grocery/Grocerry";
 import Electronic from "./components/electronic/Electronic";
 import Beauty from "./components/beauty/Beauty";
 import Navbar from "./components/navbar/Navbar";
+import SubNavbar from "./components/subnavbar/SubNavbar";
 
 function App() {
   return (

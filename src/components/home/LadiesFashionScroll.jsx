@@ -4,13 +4,12 @@ import Slider from 'react-slick';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const ScrollbarComponent = () => {
+const ScrollTwo = () => {
   const [data, setData] = useState([]);
 
-  const mensFashion = data.filter(((f) => f.subCategory === "men" && (f.id >= 101 && f.id <= 110)));
 
   const womensFashion = data.filter(
-    (f) => f.subCategory === "woman"
+    (f) => (f.subCategory === "woman") && (f.id <= 185)
   );
 
   useEffect(() => {
@@ -22,16 +21,16 @@ const ScrollbarComponent = () => {
   const settings = {
     dots: false,
     infinite: false,
-    speed: 300,
+    arrows: false,
+    speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
   };
 
   return (
     <div className='sliderOne' >
-      <h5 className='bestSeller'>Best Seller</h5>
-      <Slider {...settings} >
-        {mensFashion.map((item, index) => (
+      <Slider {...settings} className='sliderContainer'>
+        {womensFashion.map((item, index) => (
           <Link key={index}>
             <div className="homeCardContainer">
               <img src={item.image} alt="Err-/" className="cardImage" />
@@ -45,4 +44,4 @@ const ScrollbarComponent = () => {
   );
 };
 
-export default ScrollbarComponent;
+export default ScrollTwo;

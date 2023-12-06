@@ -21,7 +21,7 @@ const Login = () => {
 
         if(result.name){
             localStorage.setItem("user", JSON.stringify(result))
-            navigate('/')
+            navigate('/all')
         }else{
             alert("Enter Correct Details")
         }

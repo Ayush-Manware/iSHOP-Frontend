@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const Crousel = () => {
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -33,7 +34,7 @@ const Crousel = () => {
 
   return (
     <div>
-      <Slider {...settings}>
+      <Slider {...settings} className='crouselslider'>
         <div>
           <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/aa1b2bdcf519b468.jpg?q=20" alt="Kitten 1" className='crouselImage' />
         </div>
