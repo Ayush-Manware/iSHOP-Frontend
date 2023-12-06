@@ -10,7 +10,7 @@ const ScrollbarComponent = () => {
   const mensFashion = data.filter(((f) => f.subCategory === "men" && (f.id >= 101 && f.id <= 185)));
 
   useEffect(() => {
-    axios("http://localhost:2100/all")
+    axios("hhttps://e-comm-gc3t.onrender.com/all")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);

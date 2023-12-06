@@ -13,7 +13,7 @@ const ScrollTwo = () => {
   );
 
   useEffect(() => {
-    axios("http://localhost:2100/all")
+    axios("https://e-comm-gc3t.onrender.com/all")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
