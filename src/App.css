@@ -2,7 +2,6 @@
 
 * {
   margin: 0px;
-  /* border: 1px solid red; */
   padding: 0px;
   text-decoration: none;
 }
@@ -141,7 +140,7 @@ body {
 }
 
 .formDiv {
-  border: 1px solid red;
+  border: 1px solid var(--cadetColor);
   width: 30vw;
   padding: 1vw 2vw;
   margin: 3vw auto;
@@ -180,7 +179,7 @@ label {
 }
 
 .sliderOne{
-  margin: 3vw auto;
+  margin: 2vw auto;
 }
 
 .bestSeller{
@@ -195,22 +194,44 @@ label {
 .homeCardContainer {
   width: 20vw;
   padding: 1vw;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.23);
+  box-shadow: 4px 4px 10px rgb(168, 168, 168);
+  border: 1px solid var(--cadetColor);
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+
+.homeCardContainer:hover{
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.522);
+  transform: translateY(-10px);
+  z-index: 2;
+  background-color: rgba(95, 158, 160, 0.288);
+  color: white;
 }
 
 .cardImage {
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: block;
   height: 17vw;
-}
-
-.cardImage:hover {
-  filter: blur(1px);
+  border-radius: 5px;
 }
 
 .cardPrice{
   float: right;
+}
+
+.homeAddtocart{
+  color: white;
+  background-color: var(--cadetColor);
+  border: none;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+}
+
+.homeAddtocart:hover{
+  color: greenyellow;
+  font-weight: bold;
 }
 
 .btn {
@@ -255,7 +276,6 @@ label {
   display: block;
   margin:auto;
   width: 4vw; 
-  /* border: 1px solid red; */
 }
 
 .crouselImage{
@@ -265,6 +285,10 @@ label {
 .homeAddtocart{
   width: 100%;
   padding: 0.5vw 0vw;
+}
+
+.footerDiv{
+  background-color: var(--cadetColor);
 }
 
 

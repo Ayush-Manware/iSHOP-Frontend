@@ -26,8 +26,6 @@ const ScrollbarComponent = () => {
 
   return (
     <div className='sliderOne' >
-      <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/MostlyCloudyNightV2.svg" alt="logo-//" className='logoTwo' />
-      <h5 className='bestSeller'>Featured Products</h5>
       <Slider {...settings} className='sliderContainer'>
         {mensFashion.map((item, index) => (
           <Link key={index}>
