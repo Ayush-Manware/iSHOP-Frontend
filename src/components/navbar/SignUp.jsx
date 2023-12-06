@@ -16,7 +16,7 @@ const SignUp = () => {
 
   const getFormData = async () => {
     console.log(name, email, password);
-    let getData = await fetch("http://localhost:2100/signup", {
+    let getData = await fetch("https://e-comm-gc3t.onrender.com/signup", {
       method: "post",
       body: JSON.stringify({ name, email, password }),
       headers: {
