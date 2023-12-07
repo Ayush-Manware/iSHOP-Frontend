@@ -53,9 +53,6 @@ const SubNavbar = () => {
             <NavLink to={"/snacks"}>
               Snacks <i class="fa-solid fa-angle-right"></i>
             </NavLink>
-            <NavLink to={"/tea&coffee"}>
-              Teas/Coffees <i class="fa-solid fa-angle-right"></i>
-            </NavLink>
           </div>
         </div>
 

@@ -40,7 +40,9 @@
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
+  top: 55%;
+  left: 50%;
   animation: pulse 1s linear infinite;
   display: block;
 }
@@ -330,6 +332,22 @@ label {
   flex-wrap: wrap;
   gap: 1vw;
   align-items: last baseline;
+}
+
+/* Dynamic */
+.dynamicComponentContainer{
+  border: 2px solid green;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+.dynamicChildOne{
+  border: 2px solid red;
+}
+
+.dynamicChildTwo{
+  border: 2px solid black;
 }
 
 

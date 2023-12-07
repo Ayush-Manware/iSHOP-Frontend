@@ -7,8 +7,6 @@ import Login from "./components/navbar/Login";
 import Home from "./components/home/Home";
 import Fashion from "./components/fashion/Fashion";
 import Grocerry from "./components/grocery/Grocerry";
-import Electronic from "./components/electronic/Electronic";
-import Beauty from "./components/beauty/Beauty";
 import Navbar from "./components/navbar/Navbar";
 import SubNavbar from "./components/subnavbar/SubNavbar";
 import MensFashion from "./components/fashion/MensFashion";
@@ -20,7 +18,6 @@ import Watch from "./components/electronic/Watch";
 import Beverages from "./components/grocery/Beverages";
 import IndianRegular from "./components/grocery/IndianRegular";
 import Snacks from "./components/grocery/Snacks";
-import TeaCoffee from "./components/grocery/Tae&Coffee";
 import Mac from "./components/beauty/Mac";
 import Swiss from "./components/beauty/Swiss";
 import OtherBeauty from "./components/beauty/OtherBeauty";
@@ -41,9 +38,7 @@ function App() {
           <Route path="/profile" element={<p>profile Listing Component</p>} />
           <Route path="/all" element={<Home/>} />
           <Route path="/fashion" element={<Fashion/>} />
-          <Route path="/electronics" element={<Electronic/>} />
           <Route path="/grocerry" element={<Grocerry/>} />
-          <Route path="/beauty" element={<Beauty/>} />
           <Route path="/mensFashion" element={<MensFashion/>} />
           <Route path="/ladiesFashion" element={<LadiesFashion/>} />
           <Route path="/kidsFashion" element={<KidsFashion/>} />
@@ -53,11 +48,10 @@ function App() {
           <Route path="/beverages" element={<Beverages/>} />
           <Route path="/indianFood" element={<IndianRegular/>} />
           <Route path="/snacks" element={<Snacks/>} />
-          <Route path="/tea&coffee" element={<TeaCoffee />} />
           <Route path='/mac' element={<Mac/>} />
           <Route path='/swissBeauty' element={<Swiss/>} />
           <Route path="/otherBeauty" element={<OtherBeauty/>} />
-          <Route path="/dynamic:id" element={<Dynamic/>} />
+          <Route path="/dynamic/:id" element={<Dynamic/>} />
         </Route>
         <Route path="/signup" element={<SignUp />} />
         <Route path={"/login"} element={<Login />} />
