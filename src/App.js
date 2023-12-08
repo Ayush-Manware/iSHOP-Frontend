@@ -22,41 +22,46 @@ import Mac from "./components/beauty/Mac";
 import Swiss from "./components/beauty/Swiss";
 import OtherBeauty from "./components/beauty/OtherBeauty";
 import Dynamic from "./Dynamic";
+import AddToCart from "./components/navbar/AddToCart";
+import { BrowserRouter } from "react-router-dom";
+import AddToCartUI from "./components/cart/AddToCartUI";
 
 function App() {
-  
   return (
     <>
+      <BrowserRouter>
       <Navbar />
       <SubNavbar />
-      <Routes>
-        <Route element={<PrivateComponent />}>
-          <Route path="/" element={<p>Products</p>} />
-          <Route path="/add" element={<p>Add Product Component</p>} />
-          <Route path="/update" element={<p>update Listing Component</p>} />
-          <Route path="/logout" element={<p>logout Listing Component</p>} />
-          <Route path="/profile" element={<p>profile Listing Component</p>} />
-          <Route path="/all" element={<Home/>} />
-          <Route path="/fashion" element={<Fashion/>} />
-          <Route path="/grocerry" element={<Grocerry/>} />
-          <Route path="/mensFashion" element={<MensFashion/>} />
-          <Route path="/ladiesFashion" element={<LadiesFashion/>} />
-          <Route path="/kidsFashion" element={<KidsFashion/>} />
-          <Route path="/mobiles" element={<Mobiles/>}/>
-          <Route path="/laptops" element={<Laptop/>} />
-          <Route path="/watches" element={<Watch/>} />
-          <Route path="/beverages" element={<Beverages/>} />
-          <Route path="/indianFood" element={<IndianRegular/>} />
-          <Route path="/snacks" element={<Snacks/>} />
-          <Route path='/mac' element={<Mac/>} />
-          <Route path='/swissBeauty' element={<Swiss/>} />
-          <Route path="/otherBeauty" element={<OtherBeauty/>} />
-          <Route path="/dynamic/:id" element={<Dynamic/>} />
-        </Route>
-        <Route path="/signup" element={<SignUp />} />
-        <Route path={"/login"} element={<Login />} />
-      </Routes>
+        <Routes>
+          <Route element={<PrivateComponent />}>
+            <Route path="/" element={<p>Products</p>} />
+            <Route path="/addtocart" element={<AddToCart />} />
+            <Route path="/update" element={<p>update Listing Component</p>} />
+            <Route path="/logout" element={<p>logout Listing Component</p>} />
+            <Route path="/profile" element={<p>profile Listing Component</p>} />
+            <Route path="/all" element={<Home />} />
+            <Route path="/fashion" element={<Fashion />} />
+            <Route path="/grocerry" element={<Grocerry />} />
+            <Route path="/mensFashion" element={<MensFashion />} />
+            <Route path="/ladiesFashion" element={<LadiesFashion />} />
+            <Route path="/kidsFashion" element={<KidsFashion />} />
+            <Route path="/mobiles" element={<Mobiles />} />
+            <Route path="/laptops" element={<Laptop />} />
+            <Route path="/watches" element={<Watch />} />
+            <Route path="/beverages" element={<Beverages />} />
+            <Route path="/indianFood" element={<IndianRegular />} />
+            <Route path="/snacks" element={<Snacks />} />
+            <Route path="/mac" element={<Mac />} />
+            <Route path="/swissBeauty" element={<Swiss />} />
+            <Route path="/otherBeauty" element={<OtherBeauty />} />
+            <Route path="/dynamic/:id" element={<Dynamic />} />
+            <Route path="/cartProducts" element={<AddToCartUI/>} />
+          </Route>
+          <Route path="/signup" element={<SignUp />} />
+          <Route path={"/login"} element={<Login />} />
+        </Routes>
       <Footer />
+      </BrowserRouter>
     </>
   );
 }

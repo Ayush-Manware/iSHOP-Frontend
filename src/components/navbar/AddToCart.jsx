@@ -1,9 +1,15 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const AddToCart = () => {
+
+  const selector = useSelector((state) => state.cartName);
+    console.log(selector);
+
   return (
     <div className='addToCart'>
-        <i class="fa-solid fa-cart-shopping"></i>&nbsp;: 0
+       <Link to={'/cartProducts'}> <i class="fa-solid fa-cart-shopping"></i>&nbsp;: {selector.length}</Link>
     </div>
   )
 }

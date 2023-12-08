@@ -1,32 +1,36 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+ 
 const Dynamic = () => {
   const productId = useParams().id;
 
   const [productDetails, setProductDetails] = useState([]);
-
-  const dynamicData = productDetails.find((f)=> f.id === productId)
-
-  console.log(dynamicData)
-
+  
   useEffect(() => {
     axios(`https://e-comm-gc3t.onrender.com/all`)
       .then((res) => setProductDetails(res.data))
       .catch((err) => console.log(err));
   }, [productId]);
 
+  const filter = productDetails.filter((f) => f.id  == `${productId}`)
+
+
+  console.log(productDetails)
+  console.log(productId)
+  console.log(filter[0])
+  
   return (
     <div className="dynamicComponentContainer">
-      {productDetails.map((item, index) => {
-        <div className="dynamicChildOne">
+      {productDetails.filter((f)=> f.id == productId).map((item, index) => (
+        <div key={index} className="dynamicChildOne">
           {item.title}
-        </div>;
-      })}
-      <div className="dynamicChildTwo">
+          {item.price}
+        </div>
+      ))}
+      {/* <div className="dynamicChildTwo">
         <div className="dynamicChildTwo">Right</div>
-      </div>
+      </div> */}
     </div>
   );
 };

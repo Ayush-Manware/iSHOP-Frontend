@@ -4,6 +4,7 @@
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+  font-family: "Ysabeau Infant", sans-serif;
 }
 
 :root {
@@ -213,6 +214,23 @@ label {
   font-family: "Ysabeau Infant", sans-serif;
 }
 
+.buyBtnLink{
+  display: block;
+}
+
+.buyBtn , .cartBtn{
+  display: block;
+  margin: 0.3vw auto;
+  width: 100%;
+  background-color: var(--cadetColor);
+  border: none;
+  font-size: 1.3vw;
+  letter-spacing: 1px;
+  color: white;
+  padding: 0.4vw 0vw;
+  border-radius: 5px;
+}
+
 .sliderOne{
   margin: 2vw auto;
 }
@@ -232,6 +250,7 @@ label {
   padding: 1vw;
   box-shadow: 4px 4px 10px rgb(168, 168, 168);
   border: 1px solid var(--cadetColor);
+  background-color: rgba(95, 158, 160, 0.288);
   border-radius: 5px;
   transition: all 0.3s linear;
 }
@@ -240,7 +259,7 @@ label {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.522);
   transform: translateY(-10px);
   z-index: 10;
-  background-color: rgba(95, 158, 160, 0.288);
+  background-color: rgba(23, 156, 36, 0.288);
   color: white;
 }
 
@@ -386,6 +405,80 @@ label {
 .SocialIcons{
   color: white;
   margin: 0.5vw;  
+}
+
+.cartSingleContainer{
+  /* border: 1px solid red; */
+  padding: 1vw 2vw;
+}
+
+.cartCard{
+  border: 1px solid gray;
+  background-color: rgba(95, 158, 160, 0.158);
+  display: flex;
+  align-items: center;
+  padding: 2vw;
+  margin: 1vw auto;
+  width: 70vw;
+}
+
+.cartImgDiv{
+  width: 45%;
+  padding: 1vw;
+}
+
+.secondLayer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1vw auto;
+
+}
+
+.cartContentDiv{
+  width: 100%;
+  padding: 1vw;
+}
+
+.cartContentDiv h2{
+  margin: 0.5vw auto;
+  color: var(--cadetColor);
+}
+
+.keyFeatures{
+  margin: 0.5vw auto;
+}
+
+.cartTotal{
+  display: block;
+  text-align: center;
+  font-weight: bolder;
+  background-color: orange;
+  color: white;
+  width: fit-content;
+  position: sticky;
+  top: 10vw;
+  padding: 0.5vw;
+  border-radius: 10%;
+}
+
+.cartImage{
+  width: 100%;
+}
+
+.cartUIBtn{
+  border: transparent;
+  background-color: var(--cadetColor);
+  color: white;
+  font-size: 2vw;
+  padding: 0.2vw 2vw;
+  margin: 0vw 0.5vw;
+  transition: all 0.1s linear;
+  font-weight: bolder;
+}
+
+.cartUIBtn:hover{
+  background-color: orange;
 }
 
 
