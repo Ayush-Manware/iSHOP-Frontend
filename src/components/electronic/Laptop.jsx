@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addTocart } from "../../redux/Slice";
 
-const Laptop = () => {
+const Mac = () => {
   const [data, setData] = useState([]);
 
-  const mobileData = data.filter((f) => f.subCategory === "Laptop" );
+const mobileData = data.filter((f) => f.subCategory === "Laptop" );
+
 
   useEffect(() => {
     axios("https://e-comm-gc3t.onrender.com/all")
@@ -13,23 +16,33 @@ const Laptop = () => {
       .catch((err) => console.log(err));
   }, []);
 
+
+  const dispatch = useDispatch();
+
+  const handleCart = (item) => {
+    dispatch(addTocart(item));
+  };
+
   return (
-    <Link className="mensFashionMainDiv">
+    <div className="mensFashionMainDiv">
       {mobileData.map((item, index) => (
-        <Link key={index}>
-          <div className="homeCardContainer">
-            <img src={item.image} alt="Err-/" className="cardImage" />
-            <h5 className="productInfo">
-              {" "}
-              <span className="cardHeading">{item.title}</span>{" "}
-              <span className="cardPrice">₹ {item.price}</span>
-            </h5>
-            <button className="homeAddtocart">Add to cart</button>
-          </div>
-        </Link>
+        <div className="homeCardContainer">
+          <img src={item.image} alt="Err-/" className="cardImage" />
+          <h5 className="productInfo">
+            {" "}
+            <span className="cardHeading">{item.title}</span>{" "}
+            <span className="cardPrice">₹ {item.price}</span>
+          </h5>
+          <Link key={index} to={`/dynamic/${item.id}`} className="buyBtnLink">
+            <button className="buyBtn">Buy now</button>
+          </Link>
+          <button className="cartBtn" onClick={() => handleCart(item)}>
+            Add to cart
+          </button>
+        </div>
       ))}
-    </Link>
+    </div>
   );
 };
 
-export default Laptop;
+export default Mac;

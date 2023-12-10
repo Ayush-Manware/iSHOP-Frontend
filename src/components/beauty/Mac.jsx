@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { addTocart } from "../../redux/Slice";
 
 const Mac = () => {
@@ -15,15 +15,12 @@ const Mac = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  const navigate = useNavigate();
 
   const dispatch = useDispatch();
 
   const handleCart = (item) => {
     dispatch(addTocart(item));
-    // navigate("/addtocart");
   };
-
 
   return (
     <div className="mensFashionMainDiv">

@@ -470,7 +470,7 @@ label {
   border: transparent;
   background-color: var(--cadetColor);
   color: white;
-  font-size: 2vw;
+  font-size: 1vw;
   padding: 0.2vw 2vw;
   margin: 0vw 0.5vw;
   transition: all 0.1s linear;
