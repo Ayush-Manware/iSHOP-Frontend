@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addTocart } from '../../redux/Slice';
 
 const ScrollbarComponent = () => {
   const [data, setData] = useState([]);
@@ -14,6 +16,12 @@ const ScrollbarComponent = () => {
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
+
+  const dispatch = useDispatch();
+
+  const handleCart = (item) => {
+    dispatch(addTocart(item));
+  };
 
   const settings = {
     dots: false,
@@ -32,7 +40,12 @@ const ScrollbarComponent = () => {
             <div className="homeCardContainer">
               <img src={item.image} alt="Err-/" className="cardImage" />
               <h5 className='productInfo'> <span className="cardHeading">{item.heading}</span>  <span className="cardPrice">₹ {item.price}</span></h5>
-              <button className='homeAddtocart'>Add to cart</button>
+              <Link key={index} to={`/dynamic/${item.id}`} className="buyBtnLink">
+            <button className="buyBtn">Buy now</button>
+          </Link>
+              <button className="cartBtn" onClick={() => handleCart(item)}>
+            Add to cart
+          </button>
             </div>
           </Link>
         ))}

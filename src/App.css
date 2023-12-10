@@ -131,6 +131,10 @@ body {
   margin: auto 1vw;
 }
 
+.addToCartLink{
+  color: white; 
+}
+
 .navRight li a {
   text-decoration: none;
   color: white;

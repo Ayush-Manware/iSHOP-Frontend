@@ -5,8 +5,6 @@ import Footer from "./components/footer/Footer";
 import SignUp from "./components/navbar/SignUp";
 import Login from "./components/navbar/Login";
 import Home from "./components/home/Home";
-import Fashion from "./components/fashion/Fashion";
-import Grocerry from "./components/grocery/Grocerry";
 import Navbar from "./components/navbar/Navbar";
 import SubNavbar from "./components/subnavbar/SubNavbar";
 import MensFashion from "./components/fashion/MensFashion";
@@ -40,8 +38,6 @@ function App() {
             <Route path="/logout" element={<p>logout Listing Component</p>} />
             <Route path="/profile" element={<p>profile Listing Component</p>} />
             <Route path="/all" element={<Home />} />
-            <Route path="/fashion" element={<Fashion />} />
-            <Route path="/grocerry" element={<Grocerry />} />
             <Route path="/mensFashion" element={<MensFashion />} />
             <Route path="/ladiesFashion" element={<LadiesFashion />} />
             <Route path="/kidsFashion" element={<KidsFashion />} />

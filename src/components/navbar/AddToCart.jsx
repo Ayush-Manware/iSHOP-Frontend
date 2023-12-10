@@ -9,7 +9,7 @@ const AddToCart = () => {
 
   return (
     <div className='addToCart'>
-       <Link to={'/cartProducts'}> <i class="fa-solid fa-cart-shopping"></i>&nbsp;: {selector.length}</Link>
+       <Link to={'/cartProducts'} className='addToCartLink'> <i class="fa-solid fa-cart-shopping"></i>&nbsp;: {selector.length}</Link>
     </div>
   )
 }
