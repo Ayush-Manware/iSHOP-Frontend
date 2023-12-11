@@ -34,7 +34,7 @@ const Mac = () => {
           <img src={item.image} alt="Err-/" className="cardImage" />
           <h5 className="productInfo">
             {" "}
-            <span className="cardHeading">{item.title}</span>{" "}
+            <span className="cardHeading">{item.heading}</span>{" "}
             <span className="cardPrice">₹ {item.price}</span>
           </h5>
           <Link key={index} to={`/dynamic/${item.id}`} className="buyBtnLink">

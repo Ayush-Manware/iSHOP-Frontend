@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
  
 const Dynamic = () => {
-  const productId = useParams().id;
+  const productId = String(useParams().id);
 
   const [productDetails, setProductDetails] = useState([]);
   
@@ -13,7 +13,7 @@ const Dynamic = () => {
       .catch((err) => console.log(err));
   }, [productId]);
 
-  const filter = productDetails.filter((f) => f.id  == `${productId}`)
+  const filter = productDetails.filter((f) => f.id  === `${productId}`)
 
 
   console.log(productDetails)
@@ -22,7 +22,7 @@ const Dynamic = () => {
   
   return (
     <div className="dynamicComponentContainer">
-      {productDetails.filter((f)=> f.id == productId).map((item, index) => (
+      {productDetails.filter((f)=> f.id === productId).map((item, index) => (
         <div key={index} className="dynamicChildOne">
           {item.title}
           {item.price}

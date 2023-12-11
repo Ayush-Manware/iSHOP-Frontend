@@ -11,7 +11,7 @@ const Home = () => {
     <div className="homeContainer">
       <Banner />
       <div className="homeBody">
-        <Suspense fallback={<span class="loader"></span>}>
+        <Suspense fallback={<span class="loader"></span>} className="susp">
           <ScrollbarComponent />
           <ScrollTwo />
           <ElectronicScroll />

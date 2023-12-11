@@ -32,7 +32,7 @@ function App() {
       <SubNavbar />
         <Routes>
           <Route element={<PrivateComponent />}>
-            <Route path="/" element={<p>Products</p>} />
+            <Route path="/" element={<Home/>} />
             <Route path="/addtocart" element={<AddToCart />} />
             <Route path="/update" element={<p>update Listing Component</p>} />
             <Route path="/logout" element={<p>logout Listing Component</p>} />
