@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const AddToCart = () => {
 
   const selector = useSelector((state) => state.cartName);
-    console.log(selector);
+    // console.log(selector);
 
   return (
     <div className='addToCart'>

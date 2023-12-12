@@ -14,12 +14,11 @@ const Dynamic = () => {
   }, [productId]);
 
   const filter = productDetails.filter((f) => f.id  === `${productId}`)
-
-
-  console.log(productDetails)
-  console.log(productId)
-  console.log(filter[0])
   
+  console.log(productId)
+  console.log(productDetails)
+  console.log(filter)
+
   return (
     <div className="dynamicComponentContainer">
       {productDetails.filter((f)=> f.id === productId).map((item, index) => (
@@ -28,9 +27,6 @@ const Dynamic = () => {
           {item.price}
         </div>
       ))}
-      {/* <div className="dynamicChildTwo">
-        <div className="dynamicChildTwo">Right</div>
-      </div> */}
     </div>
   );
 };

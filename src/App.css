@@ -490,25 +490,39 @@ label {
 @media (max-width: 600px) {
   body {
     font-size: 14px;
+    border: 1px solid red;
   }
 
   .logoImg{
-    width: 5vw;
+    width: 10vw;
+  }
+
+  .searchBar{
+    display: none;
   }
 
   .navbar{
     padding: 2vw;
   }
 
+  .fashionList{
+    width: 25vw;
+    top: 5vw; 
+  }
+
   .mensFashionMainDiv{
     flex-direction: column;
     align-items: center;
+    gap: 3vw;
   }
 
   .homeCardContainer{
-    width: 70%;
-    padding: 3vw;
-    gap: 5vw;
+    width: 80%;
+    padding: 4vw;
+  }
+
+  .addToCartLink{
+    font-size: 4vw;
   }
 
   .cardImage{
@@ -525,10 +539,45 @@ label {
   }
 
   .buyBtn, .cartBtn{
-    font-size: 4vw;
+    font-size: 5vw;
     padding: 2vw;
     margin: 1.5vw auto;
   }
+
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3vw;
+    font-size: 5vw;
+  }
+
+  .footer-bottom{
+    font-size: 5vw;
+  }
+
+  .footer h3{
+    margin: 1vw auto;
+  }
+
+  .footer{
+    margin-top: 8vw;
+  }
+
+  .logout {
+    font-size: 5vw;
+  }
+
+  .subNavbar{
+    /* margin: 1vw; */
+  }
+
+  .innerSubNavbar{
+    font-size: 3.6vw;
+    margin: auto;
+  }
+
+  
 
 }
 
