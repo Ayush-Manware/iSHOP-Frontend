@@ -76,7 +76,7 @@ body {
 }
 
 .navbar {
-  background-color: var(--cadetColor);
+  background-color: cornflowerblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -568,17 +568,59 @@ label {
     font-size: 5vw;
   }
 
-  .subNavbar{
-    /* margin: 1vw; */
-  }
-
   .innerSubNavbar{
     font-size: 3.6vw;
     margin: auto;
   }
 
-  
+}
 
+@media screen and (min-width : 601px) and (max-width: 1007px) {
+
+  body{
+    /* background-color: red; */
+  }
+
+  .logoImg{
+    width: 7vw;
+  }
+
+  .logout{
+    font-size: 2vw;
+  }
+
+  .homeCardContainer {
+    width: 27vw;
+  }
+
+  .cardImage{
+    width: 25vw;
+    height: 26vw;
+  }
+
+  .cardHeading{
+    font-size: 2vw;
+  }
+
+  .cardPrice{
+    font-size: 2vw;
+    margin: 0.5vw auto;
+  }
+  
+  .buyBtn, .cartBtn{
+    font-size: 2vw;
+  }
+
+  .innerSubNavbar{
+    font-size: 2vw;
+    margin: auto;
+  }
+
+  .fashionList{
+    top: 3.1vw;
+    width: 16vw;
+  }
+  
 }
 
 

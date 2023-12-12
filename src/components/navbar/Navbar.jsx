@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import SearchBar from "./SearchBar";
+// import SearchBar from "./SearchBar";
 import Profile from "./Profile";
 import AddToCart from "./AddToCart";
 
@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="navRight">
           {auth ? (
             <div className="afterLogin">
-              <SearchBar/>
+              {/* <SearchBar/> */}
               <AddToCart/>
               <Profile/>
             </div>

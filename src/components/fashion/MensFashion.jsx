@@ -32,8 +32,8 @@ const Mac = () => {
           <img src={item.image} alt="Err-/" className="cardImage" />
           <h5 className="productInfo">
             {" "}
-            <span className="cardHeading">{item.heading}</span>{" "}
-            <span className="cardPrice">₹ {item.price}</span>
+            <div className="cardHeading">{item.heading.slice(0, 25)}...</div>{" "}
+            <div className="cardPrice">₹ {item.price}</div>
           </h5>
           <Link key={index} to={`/dynamic/${item.id}`} className="buyBtnLink">
             <button className="buyBtn">Buy now</button>
