@@ -479,6 +479,13 @@ label {
   background-color: orange;
 }
 
+.btn{
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  font-size: 5vw;
+}
+
 
 /* ----------------------------------------------------------------------------- */
 
@@ -486,6 +493,14 @@ label {
 @media (max-width: 600px) {
   body {
     font-size: 14px;
+  }
+
+  .formDiv{
+    width: 80%;
+  }
+
+  .formDiv input, label{
+    font-size: 4vw;
   }
 
   .sliderOne {
@@ -588,6 +603,24 @@ label {
     /* background-color: red; */
   }
 
+  .formDiv {
+    width: 55vw;
+  }
+  
+  .formDiv h1 {
+    text-align: center;
+    font-family: "Tilt Prism", sans-serif;
+  }
+  
+  .formDiv input,
+  label {
+    font-size: 2vw;
+  }
+
+  .btn{
+    font-size: 3vw;
+  }
+
   .logoImg{
     width: 7vw;
   }
@@ -639,6 +672,23 @@ label {
   /* body{
     background-color: red;
   } */
+
+  .formDiv h1{
+    font-size: 4vw;
+  }
+
+  .formDiv {
+    width: 40vw;
+  }
+
+  .formDiv input, label{
+    padding: 1vw;
+    font-size: 2vw;
+  }
+
+  .btn{
+    font-size: 2vw;
+  }
 
   .navbar{
     padding: 1vw;
