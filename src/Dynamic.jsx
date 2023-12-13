@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
- 
+
 const Dynamic = () => {
   const productId = String(useParams().id);
 
@@ -23,7 +23,7 @@ const Dynamic = () => {
     <div className="dynamicComponentContainer">
       {productDetails.filter((f)=> f.id === productId).map((item, index) => (
         <div key={index} className="dynamicChildOne">
-          {item.title}
+          {item.image}
           {item.price}
         </div>
       ))}

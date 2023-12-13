@@ -29,7 +29,7 @@ const Mac = () => {
   return (
     <div className="mensFashionMainDiv">
       {mobileData.map((item, index) => (
-        <div className="homeCardContainer">
+        <div className="homeCardContainer" key={index}>
           <img src={item.image} alt="Err-/" className="cardImage" />
           <h5 className="productInfo">
             {" "}

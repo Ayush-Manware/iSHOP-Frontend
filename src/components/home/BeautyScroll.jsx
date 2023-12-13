@@ -29,14 +29,30 @@ const BeautyScroll = () => {
     dispatch(addTocart(item));
   };
 
-  const settings = {
-    dots: false,
-    infinite: false,
-    arrows: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 3,
-  };
+  const screenWidth = window.innerWidth;
+
+  let settings ;
+
+  if (screenWidth > 600) {
+     settings = {
+      dots: false,
+      infinite: false,
+      arrows: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 3,
+    }
+  }
+  else{
+     settings = {
+      dots: false,
+      infinite: false,
+      arrows: false,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
+  }
 
   return (
     <div className='sliderOne'>

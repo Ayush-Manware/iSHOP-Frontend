@@ -15,13 +15,13 @@ const SubNavbar = () => {
           <NavLink className="fashionLink">Fashion</NavLink>
           <div className="fashionList">
             <NavLink to={"/mensFashion"}>
-              Mens Section <i class="fa-solid fa-angle-right"></i>
+              Mens Section <i className="fa-solid fa-angle-right"></i>
             </NavLink>
             <NavLink to={"/ladiesFashion"}>
-            Ladies Section<i class="fa-solid fa-angle-right"></i>
+            Ladies Section<i className="fa-solid fa-angle-right"></i>
             </NavLink>
             <NavLink to={"/kidsFashion"}>
-              Kids Section <i class="fa-solid fa-angle-right"></i>
+              Kids Section <i className="fa-solid fa-angle-right"></i>
             </NavLink>
           </div>
         </div>
@@ -30,13 +30,13 @@ const SubNavbar = () => {
           <NavLink className="fashionLink">Electronics</NavLink>
           <div className="fashionList">
             <NavLink to={"/mobiles"}>
-              Mobiles <i class="fa-solid fa-angle-right"></i>
+              Mobiles <i className="fa-solid fa-angle-right"></i>
             </NavLink>
             <NavLink to={"/laptops"}>
-              Laptops <i class="fa-solid fa-angle-right"></i>
+              Laptops <i className="fa-solid fa-angle-right"></i>
             </NavLink>
             <NavLink to={"/watches"}>
-              Watches <i class="fa-solid fa-angle-right"></i>
+              Watches <i className="fa-solid fa-angle-right"></i>
             </NavLink>
           </div>
         </div>
@@ -45,13 +45,13 @@ const SubNavbar = () => {
           <NavLink className="fashionLink">Grocery</NavLink>
           <div className="fashionList">
             <NavLink to={"/beverages"}>
-              Beverages <i class="fa-solid fa-angle-right"></i>
+              Beverages <i className="fa-solid fa-angle-right"></i>
             </NavLink>
             <NavLink to={"/indianFood"}>
-            Indian <i class="fa-solid fa-angle-right"></i>
+            Indian <i className="fa-solid fa-angle-right"></i>
             </NavLink>
             <NavLink to={"/snacks"}>
-              Snacks <i class="fa-solid fa-angle-right"></i>
+              Snacks <i className="fa-solid fa-angle-right"></i>
             </NavLink>
           </div>
         </div>
@@ -60,13 +60,13 @@ const SubNavbar = () => {
           <NavLink className="fashionLink">Beauty & Fragrance</NavLink>
           <div className="fashionList">
             <NavLink to={"/mac"}>
-              Mac <i class="fa-solid fa-angle-right"></i>
+              Mac <i className="fa-solid fa-angle-right"></i>
             </NavLink>
             <NavLink to={"/swissBeauty"}>
-            Swiss Beauty <i class="fa-solid fa-angle-right"></i>
+            Swiss Beauty <i className="fa-solid fa-angle-right"></i>
             </NavLink>
             <NavLink to={"/otherBeauty"}>
-            other <i class="fa-solid fa-angle-right"></i>
+            other <i className="fa-solid fa-angle-right"></i>
             </NavLink>
           </div>
         </div>

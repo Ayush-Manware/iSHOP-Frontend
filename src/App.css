@@ -363,10 +363,6 @@ label {
   justify-content: center;
 }
 
-.dynamicChildOne{
-  border: 2px solid red;
-}
-
 .dynamicChildTwo{
   border: 2px solid black;
 }
@@ -490,7 +486,14 @@ label {
 @media (max-width: 600px) {
   body {
     font-size: 14px;
-    border: 1px solid red;
+  }
+
+  .sliderOne {
+    margin: 4vw auto;
+  }
+
+  .crouselImage{
+    height: 22vw;
   }
 
   .logoImg{
@@ -506,7 +509,7 @@ label {
   }
 
   .fashionList{
-    width: 25vw;
+    width: 30vw;
     top: 5vw; 
   }
 
@@ -519,6 +522,7 @@ label {
   .homeCardContainer{
     width: 80%;
     padding: 4vw;
+    margin: auto;
   }
 
   .addToCartLink{
@@ -526,7 +530,7 @@ label {
   }
 
   .cardImage{
-    height: auto;
+    height: 75vw;
   }
 
   .cardHeading{
@@ -573,6 +577,9 @@ label {
     margin: auto;
   }
 
+  .homeBody{
+    margin-top: 3vw;
+  }
 }
 
 @media screen and (min-width : 601px) and (max-width: 1007px) {
@@ -620,7 +627,63 @@ label {
     top: 3.1vw;
     width: 16vw;
   }
+
+  .homeCardContainer{
+    width: 75%;
+    margin: auto;
+  }
   
+}
+
+@media screen and (min-width: 1008px){
+  /* body{
+    background-color: red;
+  } */
+
+  .navbar{
+    padding: 1vw;
+  }
+
+  .logoImg{
+    width: 6vw;
+  }
+
+  .addToCart{
+    font-size: 2vw;
+  }
+
+  .logout{
+    font-size: 2vw;
+  }
+
+  .subNavbar h1{
+    font-size: 3.5vw;
+  }
+
+  .innerSubNavbar{
+    font-size: 2.8vw;
+  }
+
+  .cardHeading{
+    font-size: 1.5vw;
+  }
+
+  .cardPrice{
+    font-size: 1.5vw;
+  }
+
+  .buyBtn, .cartBtn{
+    font-size: 1.6vw;
+  }
+
+  .footer-container{
+    font-size: 1.5vw;
+  }
+
+  .footer-bottom{
+    font-size: 1.5vw;
+  }
+
 }
 
 
