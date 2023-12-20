@@ -346,6 +346,16 @@ label {
   padding: 0.5vw 0vw;
 }
 
+.buyCartBtn{
+  width: 100%;
+  background-color: var(--cadetColor);
+  padding: 0.5vw 0vw;
+  text-align: center;
+  margin: 0.5vw auto;
+  color: white;
+
+}
+
 
 .mensFashionMainDiv{
   display: flex;
@@ -357,14 +367,31 @@ label {
 
 /* Dynamic */
 .dynamicComponentContainer{
-  border: 2px solid green;
   padding: 2vw;
   display: flex;
   justify-content: center;
 }
 
+.dynamicImage{
+  border: 1px solid red;
+  display: block;
+  width: 30vw;
+}
+
 .dynamicChildTwo{
   border: 2px solid black;
+}
+
+.dynamicSecondDiv{
+  border: 1px solid red;
+}
+
+.dynamicChildOne{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid red;
+  width: 80vw;
 }
 
 

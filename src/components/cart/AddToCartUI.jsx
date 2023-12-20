@@ -30,6 +30,7 @@ const AddToCartUI = () => {
           <div className="cartImgDiv">
             <img src={item.image} alt="" className="cartImage" />
           </div>
+
           <div className="cartContentDiv">
             <h2>{item.title}</h2>
             <div className="keyFeatures">
@@ -53,9 +54,10 @@ const AddToCartUI = () => {
               <button onClick={()=> dispatch(removeItem(item.id))} className="cartUIBtn" > <i className="fa-solid fa-trash"></i></button>
               <button onClick={() => dispatch(decrement(item.id))} className="cartUIBtn"> <i className="fa-solid fa-square-minus"></i> </button>
               <button onClick={() => dispatch(increment(item.id))} className="cartUIBtn"><i className="fa-solid fa-square-plus"></i></button>
+              <p className="buyCartBtn">Buy Now</p>
               </div>
             </div>
-          </div>
+          </div>    
         </div>
       ))}
     </div>
