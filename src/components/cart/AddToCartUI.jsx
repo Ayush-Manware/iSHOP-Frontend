@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment, removeItem } from "../../redux/Slice";
+import { Link } from "react-router-dom";
 
 const AddToCartUI = () => {
   const selector = useSelector((state) => state.cartName);
@@ -54,7 +55,7 @@ const AddToCartUI = () => {
               <button onClick={()=> dispatch(removeItem(item.id))} className="cartUIBtn" > <i className="fa-solid fa-trash"></i></button>
               <button onClick={() => dispatch(decrement(item.id))} className="cartUIBtn"> <i className="fa-solid fa-square-minus"></i> </button>
               <button onClick={() => dispatch(increment(item.id))} className="cartUIBtn"><i className="fa-solid fa-square-plus"></i></button>
-              <p className="buyCartBtn">Buy Now</p>
+              <p className="buyCartBtn"><Link to={'/placed'}>Buy Now</Link></p>
               </div>
             </div>
           </div>    
