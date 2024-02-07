@@ -27,11 +27,17 @@ const Dynamic = () => {
               <div className="dynamicTwoDiv">
                 <h3>Key features</h3>
                 <ul>
-                  <li>{item.key1}</li>
-                  <li>{item.key2}</li>
-                  <li>{item.key3}</li>
-                  <li>{item.key4}</li>
-                  <li>{item.key5}</li>
+                  <li> {item.key1}</li>
+                  <li> {item.key2}</li>
+                  <li> {item.key3}</li>
+                  <li> {item.key4}</li>
+                  <li> {item.key5}</li>
+                  <li>{item.title}</li>
+                  <li>{item.subCategory}</li>
+                  <li>{item.category}</li>
+                  <li>{item.Cellular_Technology}</li>
+                  <li>{item.Operating_System}</li>
+                  <li>{item.Network_Service_Provider}</li>
                 </ul>
               </div>
               <p>

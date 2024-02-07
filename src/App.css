@@ -373,7 +373,6 @@ label {
 }
 
 .dynamicImage{
-  border: 1px solid red;
   display: block;
   width: 30vw;
 }
@@ -383,15 +382,22 @@ label {
 }
 
 .dynamicSecondDiv{
-  border: 1px solid red;
+  width: 50%;  
+  font-size: 1.5vw;
 }
 
 .dynamicChildOne{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 1px solid red;
   width: 80vw;
+  /* border: 1px solid gray; */
+  padding: 1vw;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.288);
+}
+
+.dynamicTwoDiv li{
+  list-style: none;
 }
 
 
@@ -522,6 +528,20 @@ label {
     font-size: 14px;
   }
 
+  .dynamicChildOne{
+    display: block;
+  }
+
+  .dynamicImage{
+    display: block;
+    margin: auto;
+  }
+
+  .dynamicSecondDiv{
+    width: 100%;
+    font-size: 3vw;
+  }
+
   .formDiv{
     width: 80%;
   }
@@ -632,6 +652,23 @@ label {
 
   .formDiv {
     width: 55vw;
+  }
+
+  .dynamicChildOne{
+    display: block;
+  }
+
+  .dynamicTwoDiv{
+    font-size: 3vw;
+  }
+
+  .dynamicImage{
+    margin: auto;
+    display: block;
+  }
+
+  .dynamicSecondDiv{
+    width: 100%;
   }
   
   .formDiv h1 {
