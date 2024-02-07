@@ -5,6 +5,7 @@ const Placed = () => {
   return (
     <div className="order-main">
         <h1>Order Placed Successfully</h1>
+        <video src=""></video>
        <p> <Link to={"/"}>Continue Shopping...</Link> </p>
     </div>
   )
