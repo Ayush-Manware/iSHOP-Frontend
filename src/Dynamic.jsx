@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Dynamic = () => {
   const productId = Number(useParams().id);
@@ -46,7 +46,7 @@ const Dynamic = () => {
               <p>Price : {item.price}</p>
               <p>Rating : {item.rating}</p>
               <p>Material care : {item.Material_Care}</p>
-              <button className="btn">Place Order</button>
+              <Link to={'/placed'}><button className="btn">Place Order</button></Link>
             </div>
           </div>
         ))}

@@ -23,6 +23,7 @@ import Dynamic from "./Dynamic";
 import AddToCart from "./components/navbar/AddToCart";
 import { BrowserRouter } from "react-router-dom";
 import AddToCartUI from "./components/cart/AddToCartUI";
+import Placed from "./Placed";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
             <Route path="/otherBeauty" element={<OtherBeauty />} />
             <Route path="/dynamic/:id" element={<Dynamic />} />
             <Route path="/cartProducts" element={<AddToCartUI/>} />
+            <Route path="/placed" element={<Placed/>} />
           </Route>
           <Route path="/signup" element={<SignUp />} />
           <Route path={"/login"} element={<Login />} />
