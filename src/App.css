@@ -526,22 +526,9 @@ label {
   width: 50%;
   margin: auto;
   text-align: center;
-  height: 20vw;
-  width: 80vw;
-  position: relative;
+  padding: 1vw;
 }
 
-.order-main h1{
-  position: absolute;
-  top: 35%;
-  left: 30%;
-}
-
-.order-main p{
-  position: absolute;
-  top: 55%;
-  right: 30%;
-}
 
 /* ----------------------------------------------------------------------------- */
 
